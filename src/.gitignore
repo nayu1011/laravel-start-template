@@ -1,0 +1,64 @@
+# ===========================================
+# Laravel Core
+# ===========================================
+/vendor/
+/node_modules/
+
+# Laravel build artifacts
+/public/build/
+/public/hot
+/public/storage
+
+# Storage & cache
+/storage/*.key
+/storage/logs/**
+/storage/framework/cache/**
+/storage/framework/sessions/**
+/storage/framework/views/**
+
+# PHPUnit
+/.phpunit.cache
+.phpunit.result.cache
+
+# .env files (example は除外しない)
+.env
+.env.*
+!.env.example
+
+# Composer / npm logs
+npm-debug.log
+yarn-error.log
+
+# ===========================================
+# Docker (DB 永続化・PID など)
+# ===========================================
+docker/mysql/data/*
+docker/mysql/*tmp*
+docker/*.pid
+
+# ===========================================
+# IDE / Editor settings
+# （チームで共有しない方が良い個人設定）
+# ===========================================
+.idea/
+.fleet/
+.vscode/  # setting.jsonをチームで共有する場合は除外
+
+# VSCode のワークスペース設定（残したい人もいるので個別管理）
+*.code-workspace
+
+# ===========================================
+# OS generated files
+# ===========================================
+.DS_Store
+Thumbs.db
+
+# ===========================================
+# Optional but recommended
+# （プロジェクト直下に勝手に生成されることがある）
+# ===========================================
+.cache/
+.local/
+.config/
+.bash_history
+
