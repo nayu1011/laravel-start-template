@@ -32,6 +32,7 @@ docker/*.pid
 /src/.phpunit.result.cache
 
 # .env 系
+/.env
 /src/.env
 /src/.env.*
 !/src/.env.example
